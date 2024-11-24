@@ -1,0 +1,16 @@
+﻿<Page x:Class="PersonnelManagement.Pages.EmployeeListPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:PersonnelManagement.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="EmployeeListPage">
+
+    <Grid>
+        <DataGrid IsReadOnly="True" x:Name="EmployeesDataGrid" SelectedItem="{Binding SelectedEmployee}" ItemsSource="{Binding}" HorizontalAlignment="Left" Height="268" Margin="172,59,0,0" VerticalAlignment="Top" Width="590"/>
+        <Button x:Name="EmployeeEditButton" Content="Редактировать" HorizontalAlignment="Left" Margin="371,351,0,0" VerticalAlignment="Top" Width="186" Height="40" Click="EmployeeEditButton_Click"/>
+
+    </Grid>
+</Page>
